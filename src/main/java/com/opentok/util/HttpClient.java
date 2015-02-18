@@ -121,7 +121,7 @@ public class HttpClient extends AsyncHttpClient {
         if (offset != 0 || count != 0) {
             url += "?";
             if (offset != 0) {
-                url += ("offset=" + Integer.toString(offset));
+                url += ("offset=" + Integer.toString(offset) + '&');
             }
             if (count != 0) {
                 url += ("count=" + Integer.toString(count));
